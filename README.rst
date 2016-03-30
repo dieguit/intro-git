@@ -1,11 +1,11 @@
 Introducción a Git
 ==================
 
-:autor: Martín Gaitán
-:evento: 8vas Jornadas de Software Libre de la UNNOBA
-:fecha: 29-11-2013
-:presentación: `ver online <http://mgaitan.github.io/intro-git/index.html>`_
+Presentación para las jornadas de instalación de Software Libre en Salta.
+Todas las imágenes y varias diapositivas están basadas en la presentación de `Martín Gaitán <https://github.com/mgaitan/intro-git/>`_ ::
 
+:autor: Diego Gil
+:evento: FLISOL Salta 2016
 
 Para generar la presentación
 ----------------------------
