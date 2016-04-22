@@ -88,3 +88,7 @@ div.cite cite:before {
 .cite_label, .hidden {
     display: none;
 }
+
+.strike {
+  text-decoration: line-through;
+}
