@@ -20,7 +20,7 @@ pre {
 pre.highlight {
     border: 2px solid blue;
     padding: 0.5em;
-    width: -moz-fit-content;
+    width: 100%
 }
 
 h1, h2, h3, h4 {
@@ -87,4 +87,17 @@ div.cite cite:before {
 
 .cite_label, .hidden {
     display: none;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.footer-info {
+    color: #999999;
+    display: block;
+    margin-top: 1em;
+    float: center;
+    font-size: 24px;
+    padding-left: 50px;
 }

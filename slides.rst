@@ -3,8 +3,12 @@
 :author: Diego Gil
 :css: slides.css
 :skip-help: true
+
 .. role:: strike
     :class: strike
+
+.. role:: footer-info
+    :class: footer-info
 
 Introducción a
 ===============
@@ -13,7 +17,7 @@ Introducción a
 .. image:: img/Git.png
 
 
-Diego Gil / SaltaLug / #FLISOL2016 / Nybble Group
+:footer-info:`Diego Gil / SaltaLug / #FLISOL2016 / Nybble Group`
 
 --------
 
@@ -27,14 +31,14 @@ Quién soy
 - Desarrollador Back-end.
 - ¿Git? :strike:`Maestr` Principiante que le pone onda..
 
-diego.gil2505@gmail.com - https://github.com/dieguit
+:footer-info:`diego.gil2505@gmail.com - https://github.com/dieguit`
 
 -----------
 
 
 
 En el principio...
---------------------
+------------------
 
 
 .. image:: img/01-copies.png
@@ -616,7 +620,7 @@ Otros comanditos útiles
 
     git stash
     git stash [list | pop | apply | remove]
-   
+
 .. code:: bash
 
     # El paraiso del jefe!
@@ -700,4 +704,3 @@ Preguntas?
     https://speakerdeck.com/schacon/introduction-to-git
     http://www.slideshare.net/mickaeltr/git-github-leverage-your-open-source-projects
     http://www.slideshare.net/anildigital/git-introduction
-
