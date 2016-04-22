@@ -1,8 +1,10 @@
 :title: Introducción a Git
-:venue: 8vas Jornadas de Software Libre de la UNNOBA
-:author: Martín Gaitán
+:venue: FLISOL Salta, 23/04/2016
+:author: Diego Gil
 :css: slides.css
 :skip-help: true
+.. role:: strike
+    :class: strike
 
 Introducción a
 ===============
@@ -11,7 +13,7 @@ Introducción a
 .. image:: img/Git.png
 
 
-Martín Gaitán / `@tin_nqn_ <http://twitter.com/tin_nqn_>`_ / #8JSL / CC-by-sa
+Diego Gil / SaltaLug / #FLISOL2016 / Nybble Group
 
 --------
 
@@ -20,14 +22,12 @@ Martín Gaitán / `@tin_nqn_ <http://twitter.com/tin_nqn_>`_ / #8JSL / CC-by-sa
 Quién soy
 ---------
 
-- Compañero de Nati, Zamba y Minou
-- Hincha de Boca y del dulce de leche
-- Ingeniero en Computación (UNC)
-- Emprendedor (@Phasety)
-- Pythonista desde 2007
-- ¿Git? Más que experto, ex-principiante
+- Miembro de SaltaLug.
+- Alumno de la UNSa, egresado CU y casi casi LIC.
+- Desarrollador Back-end.
+- ¿Git? :strike:`Maestr` Principiante que le pone onda..
 
-gaitan@gmail.com - http://mgaitan.github.io
+diego.gil2505@gmail.com - https://github.com/dieguit
 
 -----------
 
@@ -45,7 +45,7 @@ En el principio...
     * flujo totalmente lineal
     * impide colaboración
     * no hay historia.
-    * dónde hice qué
+    * dónde hice qué o.O
 
 --------
 
@@ -56,7 +56,7 @@ En el principio...
 .. code:: html
 
     From: Juan <juancho@todavianosegit.com>
-    To: Pedro <pete@todavianosegit.com>
+    To: Pedro <pedrito@todavianosegit.com>
     Subject: Trabajo
 
     Peter, acá te mando el zip con la última versión
@@ -107,16 +107,11 @@ CVS/SVN
 
 Todo un avance, pero...
 
-- Centralizado
-
-  - Cuello de botella y Talón de Aquiles
-  - Dependiente de la red para casi todo
-  - Commits "bomba"
-
-- Ramas difíciles
-
-  - Flujo lineal
-  - Dificulta el cambio de contexto/colaboración
+- Dependiente de la red para casi todo.
+- No soporta bien ediciones simultaneas a un solo archivo.
+- Poco soporte para crear, eliminar y renombrar archivos.
+- Flujo lineal. Pa' que usan ramas?!
+- Dificulta el cambio de contexto/colaboración
 
 
 --------
@@ -127,8 +122,7 @@ Y llegaron los sistemas distribuídos
 - Git / Mercurial / Bazaar
 - Todas las copias son repositorios
 - Dependen menos de la red
-- múltiples flujos posibles
-- Más respaldos
+- Múltiples flujos posibles
 - Experimentación / Branching fácil
 
 ------
@@ -161,7 +155,6 @@ Los peros
 - La documentación también es distribuída ;-)
 - La UI está llena de *WTF!*
 - No hay **una** manera obvia
-- Muchos nombres para referirse a lo mismo
 
 --------
 
@@ -224,8 +217,8 @@ Quién sos
 
 .. code:: bash
 
-    git config --global user.name "Martín Gaitán"
-    git config --global user.email gaitan@gmail.com
+    git config --global user.name "Diego Gil"
+    git config --global user.email diego.gil2505@gmail.com
 
 
 Tu editor
@@ -249,13 +242,13 @@ Luego se pueden declarar repos remotos
 
 .. code:: bash
 
-    git remote add origin https://github.com/mgaitan/intro-git.git
+    git remote add origin https://github.com/dieguit/intro-git.git
 
 O directamente clonar un repositorio
 
 .. code:: bash
 
-    git clone https://github.com/mgaitan/intro-git.git .
+    git clone https://github.com/dieguit/intro-git.git .
 
 --------
 
@@ -392,11 +385,10 @@ No queremos control de **todo**
 
 .. code:: bash
 
-    *.pyc
-    *.swp
+    /tmp/
     /build/
     /doc/[abc]*.txt
-    .pypirc
+    .project
     *.egg-info
 
 .. note::
@@ -613,21 +605,22 @@ O forzamos lo nuestro / lo de ellos
 :data-y: r1400
 
 
-Rebase
---------
-
-- Mover el origen de la rama
-- Muy útil para *reescribir la historia*
-- Recomendado antes de un *merge* a **master**
-
-.. image:: img/merge2.png
-
-.. image:: img/merge3.png
+Otros comanditos útiles
+-----------------------
 
 .. code:: bash
 
-    # en feature-xyz
-    git rebase master
+    git diff > cambios
+
+.. code:: bash
+
+    git stash
+    git stash [list | pop | apply | remove]
+   
+.. code:: bash
+
+    # El paraiso del jefe!
+    git blame <archivo>
 
 ------
 
@@ -655,7 +648,6 @@ Github
 
 - No es sólo **hosting** git gratis (para software libre)
 - Es una **plataforma social y profesional**
-- ¡Colaborar con OSS nunca fue tan fácil!
 - Gestión de proyectos / comunicación / revisión / etc.
 - Enterarse de tendencias y aprender de cracks
 
@@ -678,7 +670,7 @@ Más info / práctica
 - Git magic
 - Githug
 - Github help
-- Esta charla: http://github.com/mgaitan/intro-git
+- Esta charla: http://github.com/dieguit/intro-git
 
 
 ---------
